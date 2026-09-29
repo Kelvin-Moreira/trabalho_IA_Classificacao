@@ -1,1 +1,3 @@
-# trabalho_IA_Classificacao
+Passo a passo:
+
+python -m venv .venv
