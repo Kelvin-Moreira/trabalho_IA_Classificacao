@@ -13,7 +13,7 @@ def criar_modelos() -> dict[str, Pipeline]:
 
     return {
         "KNN": Pipeline([
-            ("normalizador", StandardScaler()), # StandardScaler é usado para normalizar os dados rapaziada
+            ("normalizador", StandardScaler()),
             ("modelo", KNeighborsClassifier()),
         ]),
         "Random Forest": Pipeline([
@@ -27,7 +27,7 @@ def criar_modelos() -> dict[str, Pipeline]:
         ]),
         "SVM": Pipeline([
             ("normalizador", StandardScaler()),
-            ("modelo", SVC(probability=True, random_state=RANDOM_STATE)),
+            ("modelo", SVC(random_state=RANDOM_STATE)),
         ]),
     }
 

@@ -82,3 +82,17 @@ jupyter lab --ServerApp.use_redirect_file=False
 ```
 
 Copie para o navegador o endereço `http://localhost:...` exibido no terminal e abra o notebook em `notebooks/`.
+
+## Resultados finais
+
+Os modelos foram calibrados com `GridSearchCV` e avaliados com validação cruzada estratificada de 10 folds.
+
+| Modelo | Acurácia média | Desvio padrão |
+|---|---:|---:|
+| SVM | **97,71%** | **1,58%** |
+| KNN | 97,36% | 1,96% |
+| Random Forest | 96,65% | 2,30% |
+
+O SVM foi o modelo selecionado. Além de obter a maior acurácia média e o menor desvio padrão, classificou corretamente 203 dos 212 casos malignos e apresentou somente 9 falsos negativos.
+
+As matrizes de confusão, curvas de aprendizagem e a tabela detalhada estão em `resultados/`.
