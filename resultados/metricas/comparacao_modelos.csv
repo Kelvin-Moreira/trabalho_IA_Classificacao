@@ -1,4 +1,4 @@
-modelo,melhores_parametros,acuracia_media_cv,desvio_padrao_cv,acuracia_previsoes_cv
-SVM,"{'modelo__C': 0.1, 'modelo__gamma': 'scale', 'modelo__kernel': 'linear'}",0.9771303258145363,0.01583924704567585,0.9771528998242531
-KNN,"{'modelo__n_neighbors': 9, 'modelo__weights': 'uniform'}",0.9736215538847116,0.019643531664498847,0.9736379613356766
-Random Forest,"{'modelo__max_depth': None, 'modelo__min_samples_split': 2, 'modelo__n_estimators': 200}",0.9665413533834586,0.023011627286180784,0.9666080843585237
+modelo,melhores_parametros,acuracia_media_cv,desvio_padrao_cv,acuracia_teste
+SVM,"{'modelo__C': 10, 'modelo__gamma': 0.01, 'modelo__kernel': 'rbf'}",0.9735748792270531,0.01909899578367727,1.0
+KNN,"{'modelo__n_neighbors': 3, 'modelo__weights': 'uniform'}",0.9647826086956522,0.01767409642197745,0.9824561403508771
+Random Forest,"{'modelo__max_depth': None, 'modelo__min_samples_split': 2, 'modelo__n_estimators': 100}",0.9647826086956522,0.02458500573404418,0.9736842105263158
